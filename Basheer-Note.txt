@@ -1,0 +1,219 @@
+----------------------------------------------------------MMI Metlife Metropolitan------------------------------------------------------------------------------------
+MMI mail: basheer.shaik@metropolitan.co.za,Metropolitan@123$
+
+MMI VPN: metmom\bashaik,Metropolitan@123$
+
+jira: http://vwmetatlprd101.metmom.mmih.biz:8090/secure/Dashboard.jspa bshaik, j!r@
+
+bitbucket: http://10.6.50.135:7990/projects  bshaik, j!r@
+
+jenkins: http://devops-tools-nonprod.metmom.mmih.biz/metretail-jenkins bshaik, j!r@
+
+PREMIUM ACTIVITY/ UNPAIDS APP:
+-->Enable channel client pay their premiums or unpaids
+-->Each unpaid displays as task(corrective action table)- why the clients not able to pay the premium, we can do actions in that premium
+-->Each action will depend on the tool available to the advisor
+eg: a metropolitan policy with unpaid reason will have direct debit, if implemented then change payment implementation can be done
+-->like it is intermediory which can be person/organisation so they can transition, implement the relevant action button is clicked and it shows open the
+	policy menu and the context of that policy
+UNPAID APP - check whether payment is done or not (action, interaction, resolved)
+Roles:
+Financial advisor(door steps)/teleagents (phone call)
+Branch(companys branch)
+Region (district/city)
+province (state)
+DEBICHECK APP - if we want to pay for that unpaid Policy number: 985193288
+MPS APP - upload documents stoporder agency number: 9001400
+https://internal-retail-dev.metropolitan.co.za/ps-ui-mps/ 
+https://10.242.112.187:9085/ps-mps-backend/swagger-ui.html 
+http://localhost:8080/swagger-ui.html#
+STOP ORDER - Nothing but we are providing the authority to bank to deduct on behalf of us. eg: Mediassist HIS
+PAYAT APP - how we are paying (payment methods) payat policy number: 31810558
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+INTELLIJ:
+alt+f12 - terminal in intellij
+ctrl+alt+l -reformat code
+SPRINGBOOT MAVEN COMMANDS:
+mvn clean
+mvn spring-boot:run
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+java -jar -Dspring.profiles.active=dev application.jar
+REMOVING ANGULAR:
+ng --version
+npm uninstall -g @angular/cli
+npm cache clean --force
+npm install -g @angular/cli@8
+ng --version
+npm install --save-dev @angular-devkit/build-angular
+rm -rf package-lock.json node_modules && npm install (unix)
+npm config edit
+npm install ngx-toastr13.2.1 --save --legacy-peer-deps
+npm i primeng@11.4.2
+npm install node-sass@4.14.1
+ng new app_name
+ng add @angular/material
+ADDING BOOTSTRAP 4 USING NG-BOOTSTRAP & NGX-BOOTSTRAP:
+ng add @ng-bootstrap/ng-bootstrap
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+imports: [NgbModule.forRoot()]
+
+
+
+ng serve --source-map=false
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+------------------------------------------------------------NG APP INSTALL----------------------------------------------------------------------------------
+Remove node_modules :	rm -rf node_modules
+remove				:	package-lock.json file
+clear the cache		:	npm cache clean --force
+verify the cache 	:	npm cache verify
+run 				:	npm install --registry http://devops-tools-nonprod.metmom.mmih.biz/metretail-nexus/repository/metretail-npm-group/
+If it doesn't work try to update you package manager running
+npm i -g npm
+Then run again npm install
+npm install --legacy-peer-deps
+pm install --legacy-peer-deps --save module_name
+------------------------------------------------------------JENKINS BUILD---------------------------------------------------------------
+push code to git
+build -> find app -> develop -> build now
+build -> dev/tst(whereever app exists) ->build with parameters (refresh) -> build with parameters (build)
+
+-----------------------------------------------------------------------------------------------------
+CLONE REPOSITORY
+git clone --branch branch_name url
+
+CREATE NEW REPOSITORY ON COMMAND LINE
+--create a fle 
+--create local repo
+git init
+
+--AFTER MAKING CHANGES
+git add .
+git status
+git commit -m "message"
+
+--TO PUSH NEW CHANGES DATA TO GIT
+//create a branch
+git branch branch_name
+//view branch
+git branch
+//switch to another branch
+git checkout branch_name
+git remote add origin url
+git push -u origin branch_name
+
+PUSH AN EXISTING REPOSITORY FROM COMMAND LINE
+git remote add origin url
+git branch -M branch_name
+git push -u origin branch_name
+
+GIT PULL ORIGIN MASTER
+git push origin master
+git remote add or
+
+--FETCH FROM GIT URL
+git pull url
+
+--CHECK STATUS
+git status
+git clone https://github.com/basheer3/angular-test1.git
+git -c http.sslVerify=false clone https://github.com/basheer3/angular-test1.git
+---------------------------------------------------------------------------------------------------------------------------
+STATUS_CODES: {
+      '100': 'Continue',
+      '101': 'Switching Protocols',
+      '102': 'Processing',
+      '103': 'Early Hints',
+      '200': 'OK',
+      '201': 'Created',
+      '202': 'Accepted',
+      '203': 'Non-Authoritative Information',
+      '204': 'No Content',
+      '205': 'Reset Content',
+      '206': 'Partial Content',
+      '207': 'Multi-Status',
+      '208': 'Already Reported',
+      '226': 'IM Used',
+      '300': 'Multiple Choices',
+      '301': 'Moved Permanently',
+      '302': 'Found',
+      '303': 'See Other',
+      '304': 'Not Modified',
+      '305': 'Use Proxy',
+      '307': 'Temporary Redirect',
+      '308': 'Permanent Redirect',
+      '400': 'Bad Request',
+      '401': 'Unauthorized',
+      '402': 'Payment Required',
+      '403': 'Forbidden',
+      '404': 'Not Found',
+      '405': 'Method Not Allowed',
+      '406': 'Not Acceptable',
+      '407': 'Proxy Authentication Required',
+      '408': 'Request Timeout',
+      '409': 'Conflict',
+      '410': 'Gone',
+      '411': 'Length Required',
+      '412': 'Precondition Failed',
+      '413': 'Payload Too Large',
+      '414': 'URI Too Long',
+      '415': 'Unsupported Media Type',
+      '416': 'Range Not Satisfiable',
+      '417': 'Expectation Failed',
+      '418': "I'm a Teapot",
+      '421': 'Misdirected Request',
+      '422': 'Unprocessable Entity',
+      '423': 'Locked',
+      '424': 'Failed Dependency',
+      '425': 'Too Early',
+      '426': 'Upgrade Required',
+      '428': 'Precondition Required',
+      '429': 'Too Many Requests',
+      '431': 'Request Header Fields Too Large',
+      '451': 'Unavailable For Legal Reasons',
+      '500': 'Internal Server Error',
+      '501': 'Not Implemented',
+      '502': 'Bad Gateway',
+      '503': 'Service Unavailable',
+      '504': 'Gateway Timeout',
+      '505': 'HTTP Version Not Supported',
+      '506': 'Variant Also Negotiates',
+      '507': 'Insufficient Storage',
+      '508': 'Loop Detected',
+      '509': 'Bandwidth Limit Exceeded',
+      '510': 'Not Extended',
+      '511': 'Network Authentication Required'
+    }
+-----------------------------------------------------------------------------------------------------------
+NODEJS FAKEBACKEND SERVER
+
+npm init --yes
+npm install json-server -g
+create file db.json
+In package.json write a start script as => json-server -p 3007 -w db.json
+npm start
+
+http://localhost:1000/collectionController
+  
+{
+"deduction_date":[
+"202103","202108"
+]
+}
+-----------------------------------------------------------------------------------------------  
+--COPY ARRAY WITHOUT REFERENCE
+<script>
+const x=[
+{age:50,title:'first'},
+{age:51,title:'second'},
+{age:52,title:'second'}
+];
+const y=x.map((data)=>
+{
+return data.age==51 ? Object.assign({},data,{title:'third'}) : data;
+}
+)
+document.write(JSON.stringify(x)+"<br>");
+document.write(JSON.stringify(y)+"<br>");
+</script>
+
