@@ -1,0 +1,30 @@
+<mat-form-field appearance="standard">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+</mat-form-field>
+
+<div class="mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource" matSort matSortDirection="asc" matSortActive="id">
+
+    <ng-container matColumnDef="id" class="highlight">
+      <mat-header-cell *matHeaderCellDef mat-sort-header="id"> id</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="firstName" class="highlight">
+      <mat-header-cell *matHeaderCellDef mat-sort-header > firstName</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.firstName}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="lastName" class="highlight">
+      <mat-header-cell *matHeaderCellDef mat-sort-header > lastName</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email" class="highlight">
+      <mat-header-cell *matHeaderCellDef mat-sort-header > email</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" matRipple class="element-row"
+             >
+    </mat-row>
+  </mat-table>
+  <div>

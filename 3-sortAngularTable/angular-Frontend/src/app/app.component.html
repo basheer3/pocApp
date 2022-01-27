@@ -1,0 +1,23 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer id="sidenav" mode="side" opened>
+        <h1 class="text-center bg-dark mb-0 p-2 text-light fw-bold"> Tabular Application </h1>
+        <mat-list role="list" class="">
+            <mat-divider></mat-divider>
+            <mat-list-item  style="padding-left:100px;cursor:pointer;font-weight: bold" role="listitem" (click)="toggleSideNav1()">HomePage</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem"   style="padding-left:100px;cursor:pointer;;font-weight: bold;" (click)="toggleSideNav2()">Users</mat-list-item>
+            <mat-divider></mat-divider>
+
+          </mat-list>
+    </mat-drawer>
+    <mat-drawer-content *ngIf="!toggleFlag;">
+        <h1 class="text-center bg-dark mb-2 p-2 text-light fw-bold"> Homepage </h1>
+        <mat-divider ></mat-divider>
+        <app-welcome></app-welcome>
+    </mat-drawer-content>
+
+    <mat-drawer-content *ngIf="toggleFlag;">
+        <h1 class="text-center"> Angular Spring Boot REST API </h1>
+        <app-user></app-user>
+    </mat-drawer-content>
+  </mat-drawer-container>

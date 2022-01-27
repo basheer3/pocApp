@@ -1,0 +1,4 @@
+npm install json-server
+npm init --yes
+touch db.json
+json-server --watch db.json

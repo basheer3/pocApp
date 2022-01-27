@@ -1,0 +1,16 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Taj",
+      "address": "Delhii",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "naj",
+      "address": "Delhii",
+      "email": "abc@gmail.com"
+    }
+  ]
+}
