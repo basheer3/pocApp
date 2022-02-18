@@ -57,7 +57,10 @@ ADDING BOOTSTRAP 4 USING NG-BOOTSTRAP & NGX-BOOTSTRAP:
 ng add @ng-bootstrap/ng-bootstrap
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 imports: [NgbModule.forRoot()]
-
+ng new app_name --skip-tests
+ng test --code-coverage
+ng test
+ng e2e
 
 
 ng serve --source-map=false
