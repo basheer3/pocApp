@@ -53,6 +53,9 @@ npm i primeng@11.4.2
 npm install node-sass@4.14.1
 ng new app_name
 ng add @angular/material
+ng update @angular/cli @angular/core
+npm install @ngrx/store
+
 ADDING BOOTSTRAP 4 USING NG-BOOTSTRAP & NGX-BOOTSTRAP:
 ng add @ng-bootstrap/ng-bootstrap
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -220,3 +223,48 @@ document.write(JSON.stringify(x)+"<br>");
 document.write(JSON.stringify(y)+"<br>");
 </script>
 
+TAX SAVINGS:
+------------
+PPF: 7-8% returns;tenure 15Y;tax benefits 1.5L;NO taxable returns
+NPS: 12-15% returns;tenure 60Y;tax benefits 1.5L;NO taxable returns
+85ELSS: 15-20% returns;tenure 3Y;tax benefits 1.5L;10% capital gain taxable returns
+
+intraday stocks:(vodafone idea)
+---------------
+supertrend (3,1)
+sar (0.02,0.1)
+
+UPI/210367202442/UPI/karimulla.shaik/Uni
+open=low => BUY
+open=high => SELL
+----------------------------------------------
+
+TRADINGVIEW (DELIVERY: SHORT TERM):
+supertrend (14,4)
+filter: day
+
+INTRADAY:
+(5,4) 5min
+day should start with buy/sell supertrend (otherwise skip)
+profit: 0.8
+
+INTRADAY LATEST TEST:
+*get chartink stocks(crossed below=buy,crossed above=sell)
+*supertrend ATR+RSI(3,7,7) 3min
+buy after 9.45 / 9.30
+
+https://www.youtube.com/watch?v=8-SoznpgSi0 (using NSE OLD method)
+
+nifty bank(green)
+BANDHANBNK 330.80 (9.27am open=low ->BUY)
+INDUSINDBK (988.88) (9.30am open=low ->BUY)
+
+------------------------
+3min (3,2) supertrend
+----------------------------
+latest:
+3min (vwap +SAR)
+-->check SAR trend 
+--> entry when vwap emerges half
+--> stop loss 0.2
+--> target 0.2

@@ -1,0 +1,16 @@
+  mat-panel-description{
+    justify-content:space-evenly;
+  }
+  table {
+    width: 100%;
+  }  
+  th, td,mat-header-cell {
+    text-align: center !important;
+    vertical-align: middle !important;
+    justify-content: center !important;
+}
+th {
+  background-color: lightgrey;
+  opacity: 0.5;
+  color:black;
+}

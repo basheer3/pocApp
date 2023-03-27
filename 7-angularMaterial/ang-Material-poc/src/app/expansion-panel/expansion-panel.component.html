@@ -1,0 +1,36 @@
+<div *ngFor="let data of panelData; index as ind">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="mat-row" >
+                <mat-panel-description>
+                    <span>{{data.name}}</span>
+                    <span>{{data.weight}}</span>
+                    <span>{{data.position}}</span>
+                    <span>
+                        <button mat-raised-button color="warn"
+                            (click)="DeleteRecord(data);$event.stopPropagation();">Delete</button>
+                    </span>
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+                <table mat-table [dataSource]="getData(ind)" matSort>
+                    <ng-container matColumnDef="position">
+                        <th mat-header-cell *matHeaderCellDef> No. </th>
+                        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef> Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="weight">
+                        <th mat-header-cell *matHeaderCellDef> Weight </th>
+                        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </ng-template>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
