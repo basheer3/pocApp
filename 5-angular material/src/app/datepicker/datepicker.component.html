@@ -1,0 +1,7 @@
+<h1 class="text-center bg-primary pt-3 pb-3 font-weight-bold text-white">Datpicker</h1>
+<mat-form-field appearance="fill">
+    <mat-label>Custom calendar header</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker [calendarHeaderComponent]="exampleHeader"></mat-datepicker>
+  </mat-form-field>

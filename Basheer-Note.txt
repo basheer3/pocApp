@@ -89,6 +89,8 @@ CLONE REPOSITORY
 git clone --branch branch_name url
 
 CREATE NEW REPOSITORY ON COMMAND LINE
+https://github.com/basheer3/Angular.git
+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
 --create a fle 
 --create local repo
 git init
