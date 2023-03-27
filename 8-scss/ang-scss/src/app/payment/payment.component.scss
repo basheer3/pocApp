@@ -1,0 +1,25 @@
+@import 'respond-to';
+
+h1{
+    background: black;
+    color:white;
+    @include respond-to(mobile){
+      background: red;
+    } @include respond-to(tablet){
+      background: green;
+    } @include respond-to(desktop){
+      background: blue;
+    }
+  }
+
+div{
+    // width:130px;
+    // height:250px;
+    border-radius:5%;
+    border:2px solid #44bee9;
+    background-color: #ecfaff;
+    padding:5px 20px 30px 20px;
+}
+h3{
+    color: #40bae6;
+}
