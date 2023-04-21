@@ -1,0 +1,9 @@
+{
+  "customers":[
+    {
+    "name": "customer1",
+    "age": 12,
+    "gender": "Male"
+    }
+  ]
+}

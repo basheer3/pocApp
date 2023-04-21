@@ -1,0 +1,14 @@
+{
+    "customers":[
+        {
+            "name":"customer1",
+            "age":10,
+            "gender":"Male"
+        },
+        {
+            "name":"customer2",
+            "age":11,
+            "gender":"Female"
+        }
+    ]
+}

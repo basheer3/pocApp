@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+npm i @swimlane/ngx-charts --save
+npm i d3 d3-array d3-brush d3-color d3-force d3-format d3-hierarchy d3-interpolate d3-scale d3-selection d3-shape d3-time-format d3-transition --save
+
+npm i ng-circle-progress@1.5.1 --save

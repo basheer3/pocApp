@@ -1,0 +1,88 @@
+<div class="flex-box">
+  <div class="flex-40">
+<div class="flex-box">
+<div class="flex-50" style="border:1px solid black">
+  div1
+</div>
+<div class="flex-50" style="border:1px solid black">
+  div2
+</div>
+  </div>
+  <div class="flex-box">
+    <div class="flex-50" style="border:1px solid black">
+      div3
+    </div>
+    <div class="flex-50" style="border:1px solid black">
+      div4
+    </div>
+      </div>
+  </div>
+  <div class="flex-60">
+    <div class="flex-box">
+    <div class="flex-30" >
+<!-- <circle-progress
+[percent]="86"
+[radius]="90"
+[outerStrokeWidth]="18"
+[innerStrokeWidth]="18"
+[outerStrokeColor]="'#6e6e6e'"
+[animation]="true"
+[showUnits]="false"
+[animationDuration]="300"
+[showInnerStroke]="true"
+[innerStrokeColor]="'#d9d9d9'"
+[space]="-18"
+[clockwise]="false"
+[subtitle]="'Total Defects'"
+[titleFontSize]="'35'"
+[titleFontWeight]="'600'"
+[subtitleFontSize]="'16'"
+></circle-progress> -->
+<svg viewBox="-35 0 190 190" >
+				                
+  <text x="48" y="55" fill="black" class="textContent1" >56</text >
+<text x="42" y="63" fill="black" class="textContent2">
+Total Defects</text> 
+ <circle class="circle1" cx="55" cy="55" r="24" />
+</svg>
+
+    </div>
+    <div class="flex-20">
+<div class="flex-box">
+  <div class="flex-50">
+    <div class="flex-box flex-column">
+      <span class="closed"></span>
+      <span class="closed"></span>
+      <span class="closed"></span>
+      <span class="closed"></span>
+    </div>
+  </div>
+  <div class="flex-50">
+    <div class="flex-box flex-column left">
+      <div class="m-10 w-100">Closed</div>
+      <div class="m-10 w-100">Open</div>
+      <div class="m-10 w-100">In Progress</div>
+      <div class="m-10 w-100">Rejected</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+<div class="flex-50">
+<ngx-charts-bar-vertical
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="single"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [yScaleMin]="5"
+  [roundEdges]="true"
+  [barPadding]="15"
+  [showGridLines]="false"
+  (select)="onSelect($event)">
+</ngx-charts-bar-vertical>
+</div>
+</div>
+
+</div>
+</div>
