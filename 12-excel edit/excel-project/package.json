@@ -22,6 +22,7 @@
     "igniteui-angular-core": "^15.0.1",
     "igniteui-angular-excel": "^15.0.1",
     "igniteui-angular-spreadsheet": "^15.0.1",
+    "ngx-doc-viewer": "^2.0.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

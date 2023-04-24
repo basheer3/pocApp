@@ -10,8 +10,18 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
-      require('@angular-devkit/build-angular/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma'),
+      require('karma-sonarqube-unit-reporter')
     ],
+    sonarQubeUnitReporter: {
+      sonarQubeVersion: 'LATEST',
+      outputFile: 'reports/ut_report.xml',
+      overrideTestDescription: true,
+      testPaths: ['./src'],
+      testFilePattern: '.spec.ts',
+      useBrowserName: false
+    },
+    reporters: ['sonarqubeUnit'],
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here

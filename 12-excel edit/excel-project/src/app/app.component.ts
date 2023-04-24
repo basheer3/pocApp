@@ -15,43 +15,31 @@ export class AppComponent implements OnInit {
   ngOnInit() {
       // const excelFile = '../../assets/Sample1.xlsx';
 
-      // ExcelUtility.loadFromUrl(excelFile).then((w) => {
-      //   console.log('w:',w)
-      //   this.spreadsheet.workbook = w;
-      // });
-      console.log('spreadsheet',this.spreadsheet)
-const url=blb
-      fetch(url)
-  .then(res => res.blob())
-  .then(blob => {
-    const file:any = new File([blob], "File name",{ type: "application/octet-stream" })
-    console.log('file:',file)
-    ExcelUtility.load(file).then((w) => {
-        console.log('w:',w)
-        console.log('spreadsheet2',this.spreadsheet)
-        this.spreadsheet.workbook = w;
-      });
-  })
+//       console.log('spreadsheet',this.spreadsheet)
+// const url=blb
+//       fetch(url)
+//   .then(res => res.blob())
+//   .then(blob => {
+//     const file:any = new File([blob], "File name",{ type: "application/octet-stream" })
+//     console.log('file:',file)
+//     ExcelUtility.load(file).then((w) => {
+//         console.log('w:',w)
+//         console.log('spreadsheet2',this.spreadsheet)
+//         this.spreadsheet.workbook = w;
+//       });
+//   })
       
 }
-save(){
-  ExcelUtility.save(this.spreadsheet.workbook,'testt').then((w)=>{
-    console.log('save res:',w)
-    let f=new File([w],'testDataSheet')
-    const reader=new FileReader();
-    reader.readAsDataURL(f)
-    reader.onload=()=>{
-      console.log('result:',reader.result)
-    }
-  })
-}
-// load(event:any){
-//   // let file=event.target.files[0]
-//   const excelFile=new File([blb],'name')
-//   console.log('excel file:',excelFile)
-//   ExcelUtility.load(excelFile).then((w) => {
-//     console.log('w:',w)
-//     this.spreadsheet.workbook = w;
-//   });
+
+// save(){
+//   ExcelUtility.save(this.spreadsheet.workbook,'testt').then((w)=>{
+//     console.log('save res:',w)
+//     let f=new File([w],'testDataSheet')
+//     const reader=new FileReader();
+//     reader.readAsDataURL(f)
+//     reader.onload=()=>{
+//       console.log('result:',reader.result)
+//     }
+//   })
 // }
 }
