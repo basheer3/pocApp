@@ -55,6 +55,7 @@ ng new app_name
 ng add @angular/material
 ng update @angular/cli @angular/core
 npm install @ngrx/store
+npm install -g npm-install-peers
 
 ADDING BOOTSTRAP 4 USING NG-BOOTSTRAP & NGX-BOOTSTRAP:
 ng add @ng-bootstrap/ng-bootstrap
